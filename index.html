@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg"/>
+    <script src="script.js"></script>
     <title>LOOK FORWRAD</title>
   </head>
   <body>
@@ -17,11 +18,11 @@
     <main>
       <nav>
         <a href="#">CONTINUE</a>
-        <a href="#">LOAD A SAVE</a>
+        <a onclick="OpenMenu()">LOAD A SAVE</a>
         <a href="#">SETTINGS</a>
         <a href="#">QUIT GAME</a>
       </nav>
-      <div class="saves">
+      <div class="saves" id="saves">
         <h2>ALL SAVES :</h2>
         <hr>
         <div class="items-menu">

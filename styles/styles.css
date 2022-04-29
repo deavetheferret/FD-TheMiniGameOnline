@@ -67,6 +67,18 @@ div {
   margin: auto;
 }
 
+.saves {
+  display: none;
+}
+
+.open {
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 90;
+  right: 90;
+}
+
 h2 {
   font-family: var(--font-main);
   margin: 0 0 30px;
