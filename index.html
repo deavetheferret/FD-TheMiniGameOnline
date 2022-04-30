@@ -19,13 +19,16 @@
     </header>
     <main>
       <nav>
-        <a href="#">CONTINUE</a>
-        <a onclick="OpenMenu()">LOAD A SAVE</a>
-        <a href="#">SETTINGS</a>
-        <a href="#">QUIT GAME</a>
+        <a onclick="LaunchGame()">CONTINUE</a>
+        <a onclick="OpenMenuSaves()">LOAD A SAVE</a>
+        <a onclick="OpenMenuSettings()">SETTINGS</a>
+        <a href="https://github.com/deavetheferret">QUIT GAME</a>
       </nav>
       <div class="saves" id="saves">
-        <h2>ALL SAVES :</h2>
+        <div class="top-menu">
+          <h2>ALL SAVES :</h2>
+          <span onclick="OpenMenuSaves()">X</span>
+        </div>
         <hr>
         <div class="items-menu">
           <a href="">/ NO SAVE /</a>
@@ -52,10 +55,63 @@
           <span>date : DD / MM / YYYY</span>
         </div>
       </div>
-      <div class="settings">
-        <h2>SETTINGS :</h2>
+      <div class="settings" id="settings">
+        <div class="top-menu">
+          <h2>SETTINGS :</h2>
+          <span onclick="OpenMenuSettings()">X</span>
+        </div>
         <hr>
-
+        <div class="items-menu">
+          <a>AUDIO MAIN</a>
+          <span><input type="range"></span>
+        </div>
+        <hr>
+        <div class="items-menu">
+          <a>AUDIO FX</a>
+          <span><input type="range"></span>
+        </div>
+        <hr>
+        <div class="items-menu">
+          <a>AUDIO CHARACTER</a>
+          <span><input type="range"></span>
+        </div>
+        <hr>
+        <h2>CONTROLS :</h2>
+        <hr>
+        <div class="items-menu">
+          <a>GO RIGHT</a>
+          <span>D</span>
+        </div>
+        <hr>
+        <div class="items-menu">
+          <a>GO LEFT</a>
+          <span>A</span>
+        </div>
+        <hr>
+        <div class="items-menu">
+          <a>GO UP</a>
+          <span>W / SPACE</span>
+        </div>
+        <hr>
+        <div class="items-menu">
+          <a>GO RIGHT</a>
+          <span>S / SHIFT</span>
+        </div>
+        <hr>
+        <div class="items-menu">
+          <a>INTERACTION</a>
+          <span>E</span>
+        </div>
+        <hr>
+        <div class="items-menu">
+          <a>ATTACK</a>
+          <span>J</span>
+        </div>
+        <hr>
+        <div class="items-menu">
+          <a>SPECIAL ATTACK</a>
+          <span>L</span>
+        </div>
       </div>
     </main>
   </body>

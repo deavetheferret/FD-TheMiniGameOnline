@@ -19,7 +19,8 @@
     flex-direction: column;
     justify-content: flex-end;
     background: var(--color-dark);
-    min-width: 1535px;
+    height: 1110px;
+    overflow: hidden;
   }
   
   header h1 {
@@ -56,6 +57,7 @@
     margin-right: 10px;
     text-align: center;
     transition: flex-grow 0.3s, color 0.3s, background 0.3s;
+    cursor: pointer;
   }
   
   a:hover {
@@ -73,7 +75,8 @@
     margin: auto;
   }
   
-  .saves {
+  .saves,
+  .settings {
     display: none;
   }
   
@@ -83,8 +86,20 @@
     margin: auto;
     top: 90;
     right: 90;
+    max-height: 635px;
+    overflow: scroll;
   }
   
+  .open::-webkit-scrollbar {
+    background-color: var(--color-dark);
+    height: 0;
+    border-left: solid 2px var(--color-light);
+  }
+
+  .open::-webkit-scrollbar-thumb {
+    background-color: var(--color-light);
+  }
+
   h2 {
     font-family: var(--font-main);
     margin: 0 0 30px;
@@ -96,6 +111,21 @@
     margin: 0 0 20px;
   }
   
+  .top-menu {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0;
+    font-family: var(--font-main);
+    padding: 0;
+  }
+
+  .top-menu span {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
   .items-menu {
     width: 80%;
     border: none;
@@ -119,6 +149,14 @@
   
   .items-menu a {
     margin: 0 200px 0 0;
+  }
+
+  .settings a:hover {
+    flex-grow: initial;
+  }
+
+  input:range {
+    color: var(--color-light);
   }
 }
 
