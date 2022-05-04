@@ -22,12 +22,12 @@
     background: var(--color-dark);
     height: 850px;
     overflow: hidden;
+    position: relative;
   }
   
   header h1 {
     font-family: var(--font-main);
     font-size: 80px;
-    margin: 0 0 30px;
     color: var(--color-light);
   }
   
@@ -175,12 +175,21 @@
     color: var(--color-light);
   }
 
-  .game-screen img {
+  .lauding {
+    width: 10%;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    animation-name: lauding-circle;
+  }
+
+  .game-screen .game-camera {
     width: 100%;
   }
 
-  .game-screen .lauding {
-    width: 50%;
+  .game-screen {
+    width: 100%;
+    position: relative;
   }
 
   .launched-game {
