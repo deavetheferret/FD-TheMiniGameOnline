@@ -205,6 +205,13 @@
   .launched-menu {
     display: none;
   }
+
+  .range-bar {
+    color: var(--color-light);
+    border: 5px var(--color-light) solid;
+    padding: 20px;
+    appearance: none;
+  }
 }
 
 @media screen and (max-width: 1535px) {
