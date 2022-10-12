@@ -1,7 +1,7 @@
 # FD-TheMiniGameOnline
 Just a test to learn code game and play online
 
-and here you got the link to see it in action : <a href="https://imd1.ch/imd12/DevantayF/look-forward/">LOOK FORWARD</a>
+and here you got the link to see it in action : <a href="https://francois-devantay.at-eikon.ch/websites/mini-game-online/">LOOK FORWARD</a>
 
 For this project i learn a lot of technologies to make this real and i want to show you some of these : 
 
